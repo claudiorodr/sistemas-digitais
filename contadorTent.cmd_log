@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTent.v -lang verilog -prj ProjetoFinal -o contadorTent.spl -module contadorTent -template C:/Xilinx/14.3/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e contadorTent.spl C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTent.sym 

@@ -1,0 +1,5 @@
+set -tmpdir "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/xst/projnav.tmp"
+set -xsthdpdir "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/xst"
+elaborate
+-ifn NovoPagamento.prj
+-ifmt mixed

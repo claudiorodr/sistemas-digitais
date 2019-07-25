@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/EsquemaFinal_EsquemaFinal_sch_tb_isim_beh.exe -prj C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/EsquemaFinal_EsquemaFinal_sch_tb_beh.prj work.EsquemaFinal_EsquemaFinal_sch_tb work.glbl 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.vf" into library work
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTent.v" into library work
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTempo.v" into library work
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.vf" into library work
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/EsquemaFinal.vf" into library work
+Analyzing Verilog file "C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/GG.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module INV
+Compiling module XNOR2
+Compiling module AND3
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module XOR2
+Compiling module NOR5
+Compiling module NAND2
+Compiling module Comparador_MUSER_EsquemaFinal
+Compiling module contadorTent
+Compiling module contadorTempo
+Compiling module BUF
+Compiling module Somador_MUSER_EsquemaFinal
+Compiling module FD
+Compiling module EsquemaFinal
+Compiling module EsquemaFinal_EsquemaFinal_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/EsquemaFinal_EsquemaFinal_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28572 KB
+Fuse CPU Usage: 593 ms

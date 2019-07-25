@@ -1,0 +1,274 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.3
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Somador.vf
+// /___/   /\     Timestamp : 01/09/2018 19:54:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.vf -w C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.sch
+//Design Name: Somador
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Somador(Cin, 
+               entradaSomador, 
+               SALDO1, 
+               SALDO2, 
+               SALDO3, 
+               SALDO4, 
+               VAL1, 
+               VAL2, 
+               VAL3, 
+               VAL4, 
+               Cout, 
+               PAG1, 
+               PAG2, 
+               PAG3, 
+               PAG4, 
+               SALDOecra1, 
+               SALDOecra2, 
+               SALDOecra3, 
+               SALDOecra4, 
+               VALecra1, 
+               VALecra2, 
+               VALecra3, 
+               VALecra4);
+
+    input Cin;
+    input entradaSomador;
+    input SALDO1;
+    input SALDO2;
+    input SALDO3;
+    input SALDO4;
+    input VAL1;
+    input VAL2;
+    input VAL3;
+    input VAL4;
+   output Cout;
+   output PAG1;
+   output PAG2;
+   output PAG3;
+   output PAG4;
+   output SALDOecra1;
+   output SALDOecra2;
+   output SALDOecra3;
+   output SALDOecra4;
+   output VALecra1;
+   output VALecra2;
+   output VALecra3;
+   output VALecra4;
+   
+   wire Saldoe1;
+   wire Saldoe2;
+   wire Saldoe3;
+   wire Saldoe4;
+   wire SOMAE1;
+   wire SOMAE2;
+   wire SOMAE3;
+   wire SOMAE4;
+   wire SOMA1;
+   wire SOMA2;
+   wire SOMA3;
+   wire SOMA4;
+   wire XLXN_52;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_66;
+   wire XLXN_68;
+   wire XLXN_85;
+   wire XLXN_88;
+   wire XLXN_94;
+   wire XLXN_96;
+   wire XLXN_98;
+   wire XLXN_99;
+   wire XLXN_100;
+   wire XLXN_103;
+   wire XLXN_151;
+   wire XLXN_152;
+   wire XLXN_153;
+   wire XLXN_155;
+   wire XLXN_156;
+   wire XLXN_157;
+   wire XLXN_158;
+   wire XLXN_159;
+   wire XLXN_175;
+   wire XLXN_177;
+   wire XLXN_181;
+   wire XLXN_182;
+   
+   INV  XLXI_24 (.I(VAL3), 
+                .O(XLXN_96));
+   INV  XLXI_25 (.I(VAL4), 
+                .O(XLXN_98));
+   XOR2  XLXI_26 (.I0(SALDO1), 
+                 .I1(XLXN_99), 
+                 .O(XLXN_85));
+   XOR2  XLXI_27 (.I0(Cin), 
+                 .I1(XLXN_85), 
+                 .O(SOMA4));
+   OR2  XLXI_28 (.I0(XLXN_54), 
+                .I1(XLXN_52), 
+                .O(XLXN_64));
+   AND2  XLXI_29 (.I0(XLXN_64), 
+                 .I1(XLXN_56), 
+                 .O(XLXN_55));
+   OR2  XLXI_30 (.I0(XLXN_58), 
+                .I1(XLXN_55), 
+                .O(XLXN_66));
+   XOR2  XLXI_31 (.I0(SALDO3), 
+                 .I1(XLXN_96), 
+                 .O(XLXN_60));
+   XOR2  XLXI_32 (.I0(XLXN_66), 
+                 .I1(XLXN_60), 
+                 .O(SOMA2));
+   AND2  XLXI_33 (.I0(XLXN_66), 
+                 .I1(XLXN_60), 
+                 .O(XLXN_59));
+   OR2  XLXI_34 (.I0(XLXN_62), 
+                .I1(XLXN_59), 
+                .O(XLXN_68));
+   AND2  XLXI_35 (.I0(SALDO3), 
+                 .I1(XLXN_96), 
+                 .O(XLXN_62));
+   XOR2  XLXI_36 (.I0(SALDO4), 
+                 .I1(XLXN_98), 
+                 .O(XLXN_100));
+   XOR2  XLXI_37 (.I0(XLXN_68), 
+                 .I1(XLXN_100), 
+                 .O(SOMA1));
+   AND2  XLXI_38 (.I0(SALDO4), 
+                 .I1(XLXN_98), 
+                 .O(XLXN_88));
+   XOR2  XLXI_39 (.I0(XLXN_64), 
+                 .I1(XLXN_56), 
+                 .O(SOMA3));
+   XOR2  XLXI_40 (.I0(SALDO2), 
+                 .I1(XLXN_94), 
+                 .O(XLXN_56));
+   AND2  XLXI_41 (.I0(SALDO2), 
+                 .I1(XLXN_94), 
+                 .O(XLXN_58));
+   AND2  XLXI_42 (.I0(Cin), 
+                 .I1(XLXN_85), 
+                 .O(XLXN_52));
+   BUF  XLXI_43 (.I(SALDO1), 
+                .O(Saldoe1));
+   BUF  XLXI_44 (.I(SALDO3), 
+                .O(Saldoe3));
+   BUF  XLXI_45 (.I(SALDO4), 
+                .O(Saldoe4));
+   BUF  XLXI_46 (.I(SALDO2), 
+                .O(Saldoe2));
+   AND2  XLXI_47 (.I0(SALDO1), 
+                 .I1(XLXN_99), 
+                 .O(XLXN_54));
+   AND2  XLXI_48 (.I0(XLXN_68), 
+                 .I1(XLXN_100), 
+                 .O(XLXN_63));
+   OR2  XLXI_49 (.I0(XLXN_88), 
+                .I1(XLXN_63), 
+                .O(Cout));
+   INV  XLXI_50 (.I(VAL2), 
+                .O(XLXN_94));
+   INV  XLXI_51 (.I(VAL1), 
+                .O(XLXN_99));
+   XNOR2  XLXI_52 (.I0(SOMA3), 
+                  .I1(SOMA4), 
+                  .O(SOMAE4));
+   XOR2  XLXI_53 (.I0(SOMA3), 
+                 .I1(SOMA4), 
+                 .O(SOMAE3));
+   AND3  XLXI_54 (.I0(SOMA4), 
+                 .I1(SOMA3), 
+                 .I2(SOMA2), 
+                 .O(XLXN_103));
+   OR2  XLXI_55 (.I0(XLXN_103), 
+                .I1(SOMA1), 
+                .O(SOMAE1));
+   AND2  XLXI_56 (.I0(XLXN_153), 
+                 .I1(SOMA2), 
+                 .O(XLXN_156));
+   INV  XLXI_57 (.I(SOMA2), 
+                .O(XLXN_151));
+   AND3  XLXI_58 (.I0(SOMA4), 
+                 .I1(SOMA3), 
+                 .I2(XLXN_151), 
+                 .O(XLXN_152));
+   OR2  XLXI_59 (.I0(XLXN_156), 
+                .I1(XLXN_152), 
+                .O(SOMAE2));
+   OR3  XLXI_60 (.I0(XLXN_155), 
+                .I1(SOMA1), 
+                .I2(XLXN_159), 
+                .O(XLXN_153));
+   AND2  XLXI_61 (.I0(XLXN_158), 
+                 .I1(XLXN_157), 
+                 .O(XLXN_155));
+   INV  XLXI_62 (.I(SOMA1), 
+                .O(XLXN_157));
+   INV  XLXI_63 (.I(SOMA4), 
+                .O(XLXN_158));
+   INV  XLXI_64 (.I(SOMA3), 
+                .O(XLXN_159));
+   BUF  XLXI_81 (.I(VAL1), 
+                .O(XLXN_175));
+   BUF  XLXI_82 (.I(VAL2), 
+                .O(XLXN_177));
+   BUF  XLXI_83 (.I(VAL3), 
+                .O(XLXN_181));
+   BUF  XLXI_84 (.I(VAL4), 
+                .O(XLXN_182));
+   AND2  XLXI_85 (.I0(SOMAE1), 
+                 .I1(entradaSomador), 
+                 .O(PAG1));
+   AND2  XLXI_86 (.I0(SOMAE2), 
+                 .I1(entradaSomador), 
+                 .O(PAG2));
+   AND2  XLXI_87 (.I0(SOMAE3), 
+                 .I1(entradaSomador), 
+                 .O(PAG3));
+   AND2  XLXI_88 (.I0(SOMAE4), 
+                 .I1(entradaSomador), 
+                 .O(PAG4));
+   AND2  XLXI_89 (.I0(entradaSomador), 
+                 .I1(XLXN_175), 
+                 .O(VALecra1));
+   AND2  XLXI_90 (.I0(entradaSomador), 
+                 .I1(XLXN_177), 
+                 .O(VALecra2));
+   AND2  XLXI_91 (.I0(entradaSomador), 
+                 .I1(XLXN_181), 
+                 .O(VALecra3));
+   AND2  XLXI_92 (.I0(entradaSomador), 
+                 .I1(XLXN_182), 
+                 .O(VALecra4));
+   AND2  XLXI_93 (.I0(entradaSomador), 
+                 .I1(Saldoe1), 
+                 .O(SALDOecra1));
+   AND2  XLXI_94 (.I0(entradaSomador), 
+                 .I1(Saldoe2), 
+                 .O(SALDOecra2));
+   AND2  XLXI_95 (.I0(entradaSomador), 
+                 .I1(Saldoe3), 
+                 .O(SALDOecra3));
+   AND2  XLXI_96 (.I0(entradaSomador), 
+                 .I1(Saldoe4), 
+                 .O(SALDOecra4));
+endmodule

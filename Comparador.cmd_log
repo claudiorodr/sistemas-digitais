@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan3e -verilog Comparador_drc.vf -w C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Comparador C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sch C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog Comparador_drc.vf -w C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Comparador C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sch C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Comparador.sym 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTempo.v -lang verilog -prj ProjetoFinal -o contadorTempo.spl -module contadorTempo -template C:/Xilinx/14.3/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e contadorTempo.spl C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/contadorTempo.sym 

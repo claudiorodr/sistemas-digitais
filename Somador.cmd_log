@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan3e -verilog Somador_drc.vf -w C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Somador C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.sch C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/Somador.sym 

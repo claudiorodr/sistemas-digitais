@@ -1,0 +1,9 @@
+[Inputs]
+saidaComparador
+clk
+[Outputs]
+ejeta
+[BiDir]
+[ATTRIBUTES]
+VeriModel contadorTent
+

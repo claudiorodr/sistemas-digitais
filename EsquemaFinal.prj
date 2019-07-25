@@ -1,0 +1,5 @@
+verilog work "Somador.vf"
+verilog work "contadorTent.v"
+verilog work "contadorTempo.v"
+verilog work "Comparador.vf"
+verilog work "EsquemaFinal.vf"

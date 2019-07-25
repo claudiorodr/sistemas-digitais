@@ -1,0 +1,12 @@
+[Inputs]
+clk
+Seleciona
+SaidaContador
+SelecionaOpcoes
+[Outputs]
+ejeta
+=Tempo[8:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel contadorTempo
+

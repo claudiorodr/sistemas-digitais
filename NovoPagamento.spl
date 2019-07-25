@@ -1,0 +1,14 @@
+[Inputs]
+PAG1
+PAG2
+PAG3
+PAG4
+[Outputs]
+SALDO1
+SALDO2
+SALDO3
+SALDO4
+[BiDir]
+[ATTRIBUTES]
+VeriModel NovoPagamento
+

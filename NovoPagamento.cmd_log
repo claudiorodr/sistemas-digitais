@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/NovoPagamento.v -lang verilog -prj ProjetoFinal -o NovoPagamento.spl -module NovoPagamento -template C:/Xilinx/14.3/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e NovoPagamento.spl C:/.Xilinx/SistemasDigitais/Projeto/ProjetoFinal/NovoPagamento.sym 
